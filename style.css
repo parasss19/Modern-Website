@@ -31,6 +31,16 @@ html,body{
    font-weight: 800;
 } */
 
+#cursor{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: #EDBFFF;
+    position: fixed;
+    z-index: 9;
+    mix-blend-mode: difference;   /* cursor apna color change krega iss property se*/
+    
+  } 
 
 .main{
     background-color: #0F0D0D;
@@ -162,7 +172,6 @@ html,body{
     color: #111;
 }
 
-
 .page2-right button{
     width: 100%;
     border:none;
@@ -173,7 +182,7 @@ html,body{
     cursor: pointer;
 }
 
-.page2-right button :hover{
+.page2-right button:hover{
    background-color: #111;
    color: white;
 }
@@ -184,24 +193,44 @@ html,body{
     min-height: 130vh;
     width: 100%;
     font-family: PP mori;
-    margin-top: 50px;
+    padding-top: 100px;
+    border-bottom: 2px solid #434141;
+    position: relative;
+    z-index: 9;
 }
 
 .page3 h1{
     font-size: 7vw;
     color: #111;
     margin-left: 67px;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 .page3-part1{
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .page3-part1 img{
-   height: 600px;
+    height: 400px;
+    margin-top: 160px;
+    margin-left: 24px;
+    border-radius: 10px;
 }
 
+.page3-part1 video{
+    height: 400px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
 
+.page4{
+    min-height: 120vh;
+    width: 100%;
+}
+
+.page5{
+    min-height: 120vh;
+    width: 100%;
+}
