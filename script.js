@@ -30,3 +30,47 @@ ScrollTrigger.refresh();
 }
 
 init();
+
+// for page 1 animation
+var tl = gsap.timeline({
+    scrollTrigger:{
+        trigger: ".page1 h1",
+        scroller:".main",
+        markers:true,
+        start:"top 30%",
+        end:"top 0%",
+        scrub:1
+
+    }
+})
+
+tl.to(".page1 h1" , {
+    x:-70,
+},"anime")
+
+tl.to(".page1 h2" , {
+    x:45,
+},"anime")
+
+tl.to(".page1 video",{
+    width:"90%"
+},"anime")
+
+
+
+// to change bg color to white for page 2
+var tl2 = gsap.timeline({
+  scrollTrigger:{
+      trigger: ".page1 h1",
+      scroller:".main",
+      markers:true,
+      start:"top -120%",
+      end:"top -30%",
+      scrub:1
+
+  }
+})
+
+tl2.to(".main" , {
+  backgroundColor: "#fff"
+})

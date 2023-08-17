@@ -54,7 +54,6 @@ html,body{
 .navpart2 h4:hover{
     color: red;
     cursor: pointer;
-    text-decoration: underline;
 }
 .navpart3 #circle{
     height: 14px;
@@ -64,29 +63,108 @@ html,body{
     cursor: pointer;
 }
 
-.main h1{
+.page1 h1{
     font-size: 8vw;
     font-family: PP mori;
     font-weight: 300px;
     margin-top: 12vw ;
     margin-left: 5vw;
+    padding: 0 10px;
 }
 
-.main h2{
+.page1 h2{
     font-size: 8vw;
     font-family: PP mori;
     font-weight: 300px;
     margin-left: 25vw;
+    padding: 0 10px;
 }
 
 .page1 video{
+
+    /* we can make video element center by this way but when we apply gsap animation vid element will not be center */
+    /* width: 60%;
+    margin-left: 20%; 
+    margin-top:10vw
+    */
+
+
+    /* second way */
     width: 60%;
-    margin-left: 20%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 
 /* Page 2 */
+
 .page2{
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #434141;
+}
+
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 500;
+    font-family: PP mori;
+    /* margin: 60px 0; */
+    color: #111;
+}
+
+.page-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: PP mori;
+}
+
+.page2-left{
+    width: 39%;
+}
+
+.page2-right{
+    width: 24%;
+}
+
+.page2-left h2{
+    font-size: 4vw;
+    font-weight: 100;
+    color: #111;
+    line-height: 4vw;
+}
+
+.page2-right p{
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: #111;
+}
+
+
+.page2-right button{
+    width: 100%;
+    border:none;
+    margin-top: 12px;
+    border-radius: 50px;
+    padding: 3px 0;
+    background-color: #EDBFFF;
+    cursor: pointer;
+}
+
+.page2-right button :hover{
+   background-color: #111;
+   color: white;
+}
+
+/* Page 3 */
+
+.page3{
+    min-height: 140vh;
+    width: 100%;
+    padding: 100px 5vw;
 }
