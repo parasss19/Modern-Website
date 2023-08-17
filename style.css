@@ -20,7 +20,7 @@ html,body{
 }
 
 .page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -61,4 +61,32 @@ html,body{
     width: 14px;
     border-radius: 50%;
     background-color: white;
+    cursor: pointer;
+}
+
+.main h1{
+    font-size: 8vw;
+    font-family: PP mori;
+    font-weight: 300px;
+    margin-top: 12vw ;
+    margin-left: 5vw;
+}
+
+.main h2{
+    font-size: 8vw;
+    font-family: PP mori;
+    font-weight: 300px;
+    margin-left: 25vw;
+}
+
+.page1 video{
+    width: 60%;
+    margin-left: 20%;
+}
+
+
+/* Page 2 */
+.page2{
+    min-height: 100vh;
+    width: 100%;
 }
