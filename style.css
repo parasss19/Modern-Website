@@ -1,0 +1,64 @@
+@font-face {
+    font-family: monument;
+    src: url(./MonumentExtended-Ultrabold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    background-color: #0F0D0D;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+}
+
+.nav{
+    height: 58px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+}
+
+.nav img{
+    height: 26px;
+}
+
+.navpart2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navpart2 h4{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: monument;
+}
+
+.navpart2 h4:hover{
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navpart3 #circle{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: white;
+}
