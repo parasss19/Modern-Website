@@ -14,6 +14,23 @@ html,body{
     height: 100%;
     width: 100%;
 }
+/* .loader{
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    position: fixed;
+}
+
+.loader h1{
+   color: #111;
+   font-family: monument;
+   font-weight: 800;
+} */
+
 
 .main{
     background-color: #0F0D0D;
@@ -164,7 +181,27 @@ html,body{
 /* Page 3 */
 
 .page3{
-    min-height: 140vh;
+    min-height: 130vh;
     width: 100%;
-    padding: 100px 5vw;
+    font-family: PP mori;
+    margin-top: 50px;
 }
+
+.page3 h1{
+    font-size: 7vw;
+    color: #111;
+    margin-left: 67px;
+    font-weight: 400; 
+}
+
+.page3-part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page3-part1 img{
+   height: 600px;
+}
+
+
