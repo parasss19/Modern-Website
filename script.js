@@ -35,36 +35,36 @@ init();
 
 
 // Loader Function
-// function Loader() {
-//   var a = 0;
-//   setInterval(function () {
-//     if (a < 100) {
-//       a += Math.floor(Math.random() * 10)
-//       document.querySelector(".loader h1").innerHTML = a + "%"
-//     }
-//     else {
-//       a = 100;
-//       document.querySelector(".loader h1").innerHTML = a + "%"
-//     }
-//   }, 70)
-// }
+function Loader() {
+  var a = 0;
+  setInterval(function () {
+    if (a < 100) {
+      a += Math.floor(Math.random() * 10)
+      document.querySelector(".loader h1").innerHTML = a + "%"
+    }
+    else {
+      a = 100;
+      document.querySelector(".loader h1").innerHTML = a + "%"
+    }
+  }, 70)
+}
 
-// var load = gsap.timeline()
+var load = gsap.timeline()
 
-// // loader counting animation
-// load.to(".loader h1" ,{
-//     duration:1,
-//     delay:0.5,
-//     scale:1.5,
-//     onStart:Loader()
-// })
+// loader counting animation
+load.to(".loader h1" ,{
+    duration:1,
+    delay:0.5,
+    scale:1.5,
+    onStart:Loader()
+})
 
-// // loader animation(loader move upwards)
-// load.to(".loader" ,{
-//   top: "-105%",
-//   duration:1.2,
-//   delay:0.5,
-// })
+// loader animation(loader move upwards)
+load.to(".loader" ,{
+  top: "-105%",
+  duration:1.2,
+  delay:0.5,
+})
 
 
 // Cursor JS
