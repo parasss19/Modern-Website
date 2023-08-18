@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 
-.loader{
+.loader {
     height: 100vh;
     width: 100%;
     background-color: antiquewhite;
@@ -27,10 +27,10 @@ body {
     position: fixed;
 }
 
-.loader h1{
-   color: #111;
-   font-family: monument;
-   font-weight: 800;
+.loader h1 {
+    color: #111;
+    font-family: monument;
+    font-weight: 800;
 }
 
 #cursor {
@@ -40,10 +40,12 @@ body {
     background-color: #EDBFFF;
     position: fixed;
     z-index: 9;
-    mix-blend-mode: difference;    /* cursor apna color change krega iss property se*/
+    mix-blend-mode: difference;
+    /* cursor apna color change krega iss property se*/
 
-    transition: background-image ease 0.5s;     /* here this property is just used for page5 hover effect (jab diff columns par hover kre tab image direct na change ho transition se change ho)*/
-    
+    transition: background-image ease 0.5s;
+    /* here this property is just used for page5 hover effect (jab diff columns par hover kre tab image direct na change ho transition se change ho)*/
+
     /* this two property is used becoz in page5 cursor img m convert hoga so img proper center align ho */
     background-position: center;
     background-size: cover;
@@ -70,7 +72,7 @@ body {
     position: fixed;
     z-index: 999;
     mix-blend-mode: difference;
-    
+
 }
 
 .nav img {
@@ -125,7 +127,6 @@ body {
     margin-left: 20%; 
     margin-top:10vw
     */
-
 
     /* second way */
     width: 60%;
@@ -240,7 +241,7 @@ body {
 
 
 /* PAGE 4 */
-.page4{
+.page4 {
     min-height: 100vh;
     width: 100%;
     z-index: 9;
@@ -265,7 +266,7 @@ body {
     transform: translateY(20%) rotate(20deg);
 }
 
-.elem:hover img{
+.elem:hover img {
     opacity: 1;
     transform: translateY(0%) rotate(0deg);
 }
@@ -311,17 +312,17 @@ body {
     width: 100%;
     padding: 20px 100px;
     font-family: PP mori;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
-.page5 h1{
+.page5 h1 {
     font-size: 4.5vw;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
 
-.box{
+.box {
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
@@ -331,22 +332,22 @@ body {
     border-top: 1.5px solid #dadada;
 }
 
-.box:nth-last-child(1){
+.box:nth-last-child(1) {
     border-bottom: 1.5px solid #dadada;
 }
 
 
 
 
-footer{
-    height: 90vh;
+footer {
+    height: 100vh;
     width: 100%;
     background-color: #EDBFFF;
     font-family: PP mori;
     padding: 40px;
 }
 
-footer h1{
+footer h1 {
     font-size: 6vw;
     color: #111;
 }
