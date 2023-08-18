@@ -1,6 +1,6 @@
 @font-face {
     font-family: monument;
-    src: url(./MonumentExtended-Ultrabold.otf);
+    src: url(./Fonts/MonumentExtended-Ultrabold.otf);
 }
 
 * {
@@ -120,7 +120,6 @@ body {
 }
 
 .page1 video {
-
     /* we can make video element center by this way but when we apply gsap animation vid element will not be center */
     /* width: 60%;
     margin-left: 20%; 
@@ -339,17 +338,15 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 footer{
     height: 90vh;
     width: 100%;
-    background-color: blue;
+    background-color: #EDBFFF;
+    font-family: PP mori;
+    padding: 40px;
+}
+
+footer h1{
+    font-size: 6vw;
+    color: #111;
 }
