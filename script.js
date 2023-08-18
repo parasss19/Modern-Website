@@ -51,19 +51,20 @@ function Loader() {
 
 var load = gsap.timeline()
 
-// // loader counting animation
-// load.to(".loader h1" ,{
-//     duration:1,
-//     delay:0.5,
-//     scale:1.5,
-//     onStart:Loader()
-// })
-// // loader counting animation
-// load.to(".loader" ,{
-//   top: "-105%",
-//   duration:1.2,
-//   delay:0.5,
-// })
+// loader counting animation
+load.to(".loader h1" ,{
+    duration:1,
+    delay:0.5,
+    scale:1.5,
+    onStart:Loader()
+})
+
+// loader animation(loader move upwards)
+load.to(".loader" ,{
+  top: "-105%",
+  duration:1.2,
+  delay:0.5,
+})
 
 
 // Cursor JS
@@ -77,55 +78,97 @@ document.addEventListener("mousemove", function (dets) {
 
 
 // Page 1 animation
-
-// this animation is used to animate when page load
-gsap.from(".page1 h1,.page1 h2", {
-  y: 10,
-  rotate: 10,
-  opacity: 0,
-  delay: 0.5,
-  duration: 0.7
-})
-
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".page1 h1",
     scroller: ".main",
-    markers: true,
+    // markers: true,
     start: "top 30%",
     end: "top 0%",
-    scrub: 1
-
+    scrub: 3
   }
 })
 
 tl.to(".page1 h1", {
-  x: -70,
-}, "anime")
-
+  x: -100,
+}, "anim")
 tl.to(".page1 h2", {
-  x: 45,
-}, "anime")
-
+  x: 100
+}, "anim")
 tl.to(".page1 video", {
   width: "90%"
-}, "anime")
+}, "anim")
 
 
+// tl.to(".page1 h1", {
+//   x: -70,
+// }, "anime")
 
+// tl.to(".page1 h2", {
+//   x: 45,
+// }, "anime")
+
+// tl.to(".page1 video", {
+//   width: "90%"
+// }, "anime")
+
+
+// Page 2
 // to change bg color to white for page 2
 var tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".page1 h1",
     scroller: ".main",
+    // markers:true,
+    start: "top -115%",
+    end: "top -120%",
+    scrub: 3
+  }
+})
+tl2.to(".main", {
+  backgroundColor: "#fff",
+})
+
+
+// Page 4
+var tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".page1 h1",
+    scroller: ".main",
     markers: true,
-    start: "top -120%",
-    end: "top -30%",
-    scrub: 1
+    start: "top -300%",
+    end: "top -310%",
+    scrub: 3
 
   }
 })
 
-tl2.to(".main", {
-  backgroundColor: "#fff"
+tl3.to(".main", {
+  backgroundColor: "#0F0D0D"
 })
+
+
+// Page 5
+var boxes = document.querySelectorAll(".box");
+
+boxes.forEach(function (e){
+
+  e.addEventListener("mouseenter", function () {
+     var att = e.getAttribute("data-image")    //  now i will get data-image for each columns using getAttributes
+
+    //Now abb cursor hover krte hi bada ho jayga (basically cursor hide hoga and image dikhegi)
+     crsr.style.height = "300px"
+     crsr.style.width = "300px"
+     crsr.style.borderRadius = "0"
+     crsr.style.backgroundImage = `url(${att})`
+  })
+
+  // now jab mouseleave krenge so that cursor vapas se round chota sa ho jaye and cursor ki jagah jo img show hori thi vo abb hide ho jaye
+  e.addEventListener("mouseleave", function () {
+    crsr.style.height = "20px"
+    crsr.style.width = "20px"
+    crsr.style.borderRadius = "50%"
+    crsr.style.backgroundImage = "none"
+  })
+})
+

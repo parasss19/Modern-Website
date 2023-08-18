@@ -3,18 +3,20 @@
     src: url(./MonumentExtended-Ultrabold.otf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
-/* .loader{
+
+.loader{
     height: 100vh;
     width: 100%;
     background-color: antiquewhite;
@@ -29,29 +31,35 @@ html,body{
    color: #111;
    font-family: monument;
    font-weight: 800;
-} */
+}
 
-#cursor{
-    height: 13px;
-    width: 13px;
+#cursor {
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     background-color: #EDBFFF;
     position: fixed;
     z-index: 9;
-    mix-blend-mode: difference;   /* cursor apna color change krega iss property se*/
-    
-  } 
+    mix-blend-mode: difference;    /* cursor apna color change krega iss property se*/
 
-.main{
+    transition: background-image ease 0.5s;     /* here this property is just used for page5 hover effect (jab diff columns par hover kre tab image direct na change ho transition se change ho)*/
+    
+    /* this two property is used becoz in page5 cursor img m convert hoga so img proper center align ho */
+    background-position: center;
+    background-size: cover;
+}
+
+.main {
     background-color: #0F0D0D;
 }
 
-.page1{
+.page1 {
     min-height: 100vh;
     width: 100%;
+    padding-top: 12vw;
 }
 
-.nav{
+.nav {
     height: 58px;
     width: 100%;
     /* background-color: red; */
@@ -59,9 +67,13 @@ html,body{
     align-items: center;
     justify-content: space-between;
     padding: 0 28px;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    
 }
 
-.nav img{
+.nav img {
     height: 26px;
 }
 
@@ -72,17 +84,18 @@ html,body{
     gap: 20px;
 }
 
-.navpart2 h4{
+.navpart2 h4 {
     text-transform: uppercase;
     font-size: 13px;
     font-family: monument;
 }
 
-.navpart2 h4:hover{
+.navpart2 h4:hover {
     color: red;
     cursor: pointer;
 }
-.navpart3 #circle{
+
+.navpart3 #circle {
     height: 14px;
     width: 14px;
     border-radius: 50%;
@@ -90,24 +103,23 @@ html,body{
     cursor: pointer;
 }
 
-.page1 h1{
+.page1 h1 {
     font-size: 8vw;
     font-family: PP mori;
     font-weight: 300px;
-    margin-top: 12vw ;
     margin-left: 5vw;
     padding: 0 10px;
 }
 
-.page1 h2{
+.page1 h2 {
     font-size: 8vw;
     font-family: PP mori;
     font-weight: 300px;
-    margin-left: 25vw;
-    padding: 0 10px;
+    margin-left: 23vw;
+    /* padding: 0 10px; */
 }
 
-.page1 video{
+.page1 video {
 
     /* we can make video element center by this way but when we apply gsap animation vid element will not be center */
     /* width: 60%;
@@ -125,16 +137,16 @@ html,body{
 }
 
 
-/* Page 2 */
 
-.page2{
+/* Page 2 */
+.page2 {
     min-height: 90vh;
     width: 100%;
     padding: 100px 5vw;
     border-bottom: 2px solid #434141;
 }
 
-.page2 h1{
+.page2 h1 {
     font-size: 7vw;
     font-weight: 500;
     font-family: PP mori;
@@ -142,7 +154,7 @@ html,body{
     color: #111;
 }
 
-.page-container{
+.page-container {
     height: 60vh;
     width: 100%;
     display: flex;
@@ -151,30 +163,30 @@ html,body{
     font-family: PP mori;
 }
 
-.page2-left{
+.page2-left {
     width: 39%;
 }
 
-.page2-right{
+.page2-right {
     width: 24%;
 }
 
-.page2-left h2{
+.page2-left h2 {
     font-size: 4vw;
     font-weight: 100;
     color: #111;
     line-height: 4vw;
 }
 
-.page2-right p{
+.page2-right p {
     font-size: 1.5vw;
     font-weight: 300;
     color: #111;
 }
 
-.page2-right button{
+.page2-right button {
     width: 100%;
-    border:none;
+    border: none;
     margin-top: 12px;
     border-radius: 50px;
     padding: 3px 0;
@@ -182,55 +194,162 @@ html,body{
     cursor: pointer;
 }
 
-.page2-right button:hover{
-   background-color: #111;
-   color: white;
+.page2-right button:hover {
+    background-color: #111;
+    color: white;
 }
 
-/* Page 3 */
 
-.page3{
+
+/* Page 3 */
+.page3 {
     min-height: 130vh;
     width: 100%;
     font-family: PP mori;
     padding-top: 100px;
-    border-bottom: 2px solid #434141;
+    /* border-bottom: 2px solid #434141; */
     position: relative;
     z-index: 9;
 }
 
-.page3 h1{
+.page3 h1 {
     font-size: 7vw;
     color: #111;
     margin-left: 67px;
     font-weight: 400;
 }
 
-.page3-part1{
+.page3-part1 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.page3-part1 img{
+.page3-part1 img {
     height: 400px;
     margin-top: 160px;
     margin-left: 24px;
     border-radius: 10px;
 }
 
-.page3-part1 video{
+.page3-part1 video {
     height: 400px;
     margin-right: 10px;
     border-radius: 10px;
 }
 
+
+
+/* PAGE 4 */
 .page4{
-    min-height: 120vh;
+    min-height: 100vh;
     width: 100%;
+    z-index: 9;
+    padding: 130px 50px;
+    /* position: relative; */
+    font-family: PP mori;
 }
 
-.page5{
-    min-height: 120vh;
+.elem {
     width: 100%;
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.elem img {
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(20%) rotate(20deg);
+}
+
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
+/* Left img */
+.elem img:nth-child(1) {
+    width: 360px;
+    left: 1%;
+}
+
+/* Right img */
+.elem img:nth-child(3) {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    right: 2%;
+}
+
+.pg4-text {
+    height: 12vh;
+    overflow: hidden;
+}
+
+.elem h1 {
+    font-size: 6vw;
+    font-weight: 600;
+    margin: 0 20px;
+    transition: all ease 0.5s;
+}
+
+.elem:hover h1 {
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+
+
+
+
+
+/* PAGE 5 */
+.page5 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 100px;
+    font-family: PP mori;
+    margin-bottom: 80px;
+}
+
+.page5 h1{
+    font-size: 4.5vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.box{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    height: 80px;
+    border-top: 1.5px solid #dadada;
+}
+
+.box:nth-last-child(1){
+    border-bottom: 1.5px solid #dadada;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: blue;
 }
